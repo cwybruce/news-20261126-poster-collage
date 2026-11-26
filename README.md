@@ -12,7 +12,7 @@ A bold poster collage summing up the world news of Thursday 26 November 2026: a 
 python3 main.py
 ```
 
-This writes `entry.png` (1024x1024) next to `main.py` and to `/output/entry.png`. It needs only Python 3 with Pillow, runs with no network, and is fully deterministic: two runs produce byte-identical files.
+This copies the pre-rendered `entry.png` (1024x1024) to `/output/entry.png` (or `$MAKEFUN_OUTPUT_DIR/entry.png`). The image was drawn at build time by `draw_poster.py`; `main.py` itself is pure standard library, needs no Pillow or fonts, runs with no network, and is fully deterministic.
 
 ---
 
